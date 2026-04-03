@@ -173,7 +173,7 @@ func (c *Client) do(ctx context.Context, apiMethod, httpMethod string, body any)
 
 	var envelope struct {
 		Response struct {
-			Msg  ResponseMsg    `json:"msg"`
+			Msg  ResponseMsg     `json:"msg"`
 			Data json.RawMessage `json:"data"`
 		} `json:"response"`
 	}
